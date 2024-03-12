@@ -5,16 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/material/colors.module.css">
+  <link rel="stylesheet" href="./css/material/theme.css">
+  <link rel="stylesheet" href="./css/material/theme.dark.css">
+  <link rel="stylesheet" href="./css/material/theme.light.css">
+  <link rel="stylesheet" href="./css/material/tokens.css">
+  <link rel="stylesheet" href="./css/material/typography.module.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
   <nav>
+    <div class="menu-button">
+      <i class="material-icons">menu</i>
+    </div>
   </nav>
-  
-  <main id="grid">
+
+  <nav class="menu">
+    <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+    </ul>
+  </nav>
+
+  <div class="fade-layer"></div>
+
+  <main id="wrapper">
     <div id="box1">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta adipisci voluptas rem ratione provident distinctio suscipit illum harum eligendi velit aspernatur, culpa in dolores nam voluptatum animi, cum voluptates saepe placeat accusantium consequatur blanditiis. Totam quae vitae labore amet illo ipsa blanditiis velit, ipsum unde deserunt sint perspiciatis enim.</p>
-      
+    </div>
+    <img src="./img/keyboard1.jpg" alt="colseup picture of the keyboard" id="keyboard1">
+
+    <div id="box2">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo est nemo sed corrupti debitis maxime expedita et adipisci, nihil dignissimos praesentium qui nam ipsa ab sapiente, tenetur repellendus necessitatibus! Obcaecati facilis sapiente non reiciendis, optio repellendus dolore eveniet excepturi eos consequuntur minima placeat maxime porro quae laboriosam quia architecto? Quidem.</p>
+    </div>
+
+    <div id="box3">
+      <div class="flex-item">Text</div>
+      <div class="flex-item">image</div>
+      <div class="flex-item">something</div>
+      <div class="flex-item">something else</div>
+      <div class="flex-item">why not here too</div>
+      <div class="flex-item">aaaand, im out of tings to say</div>
     </div>
 
 
@@ -42,5 +76,6 @@
     </div>
   </footer>
   <!-- <script src="./js/blur.js"></script> -->
+  <script src="./js/script.js"></script>
 </body>
 </html>
