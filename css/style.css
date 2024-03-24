@@ -67,15 +67,27 @@ nav{
 
 
 @media screen and (max-width: 768px){
-    
+    *{
+        transition: 0.25s;
+    }
     .menu-bar > .nav-wrapper, .menu-bar > a{
         display: none;
+    }
+    #keyboard1{
+        max-width: 150px;
     }
 }
 
 @media screen and (min-width: 768px){
+    *{
+        transition: 0.25s;
+    }
     .menu-bar .menu-button{
         display: none;
+    }
+    #keyboard1{
+        max-width: 25vw;
+        max-height: 50px;
     }
 }
 
@@ -86,7 +98,7 @@ nav{
 
 .hover:hover{
     transition: 0.25s;
-    scale: 1.25;
+    scale: 1.125;
 }
 
 .logo{
@@ -185,14 +197,15 @@ nav{
 main{
     width: auto;
     display: grid;
-    grid-template-columns: 50vw 25vw 25vw;
+    grid-template-columns: auto;
     grid-template-rows: 100vh 60vhfr 1fr 1fr 60vh;
     grid-template-areas: 
-    'mn mn mn'
-    'b1 b1 p1'
-    'p2 b2 b2'
-    'b3 b3 b3'
-    'f1 f1 f1';
+    'mn'
+    'b1'
+    'b2'
+    'b3'
+    'f1';
+    font-family: "Roboto", sans-serif;
 }
 
 #landing{
@@ -207,21 +220,13 @@ main{
     /* color: var(--md-sys-color-primary-container-dark); */
     /* color: invert; */
     height: 100vh;
-    font-family: "Roboto", sans-serif;
     /* background-image: url('../img/keyboard1.jpg'); */
-    background-image: url('../img/keyboard1.jpg');
+    background-image: url('../img/keyboard.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
-
-/* #landing img{
-    object-fit: cover;
-    height: 100vh;
-    width: 100vw;
-    object-position: center;
-} */
 
 #landing h1{
     font-weight: 700;
@@ -235,34 +240,76 @@ main{
 
 #box1{
     grid-area: b1;
+    display: flex;
+    /* align-items: center; */
     background-color: var(--md-sys-color-primary-container-dark);
     color: var(--md-sys-color-on-primary-container-dark);
-    height: fit-content;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
 }
 
+#box1>p{
+    align-self: center;
+}
+
+#box1>div{
+    /* background-image: url('../img/keyboard1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    min-width: 150px;
+    min-height: 150px; */
+    /* max-height: 900px; */
+    /* margin-left: 10px; */
+    background-image: url('../img/keyboard1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    min-width: 150px;
+    min-height: 150px;
+    margin-left: 10px;
+}
+
 #keyboard1{
-    grid-area: p1;
-    width: 200px;
-    max-width: 100%;
-    height: 60vh;
+    /* grid-area: p1; */
+    border-radius: 10px;
+    /* width: 100px; */
+    /* max-width: 200px; */
+    /* max-height: 200%; */
+    /* height: auto; */
     object-fit: cover;
-    object-position: top;
-    padding: 20px;
+    /* object-position: top; */
     padding-right: 0px;
     margin-right: 0;
+    margin-left: 10px;
 }
 
 #box2{
     grid-area: b2;
+    display: flex;
     background-color: var(--md-sys-color-primary-container-dark);
     color: var(--md-sys-color-on-primary-container-dark);
     height: fit-content;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
+}
+
+#box2>div{
+    background-image: url('../img/keyboard1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    min-width: 200px;
+    min-height: 150px;
+    margin-right: 10px;
 }
 
 #box3{
