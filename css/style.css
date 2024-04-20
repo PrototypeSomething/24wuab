@@ -15,7 +15,7 @@ html {
 nav{
     /* min-width: 1400px; */
     position: sticky;
-    top: 0;
+    top: 0px;
 }
 
 @keyframes menu-button{
@@ -151,7 +151,28 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: width 0.5s, height 0.5s, border-radius 0.5s;
 }
+
+.menu-button>ul{
+    display: none;
+}
+
+.show-menu{
+    width: 60vw;
+    height: 60vw;
+    border-radius: 25px;
+}
+
+/* .menu-button{
+    background-color: var(--md-sys-color-surface-variant-dark);
+    position: fixed;
+    top: 17.5px;
+    right: 17.5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+} */
 
 .menu-button:hover{
     background-color: var(--md-sys-color-primary-container-dark);
@@ -162,21 +183,33 @@ nav{
 }
 
 .menu{
-    height: 100vh;
-    width: 60vw;
+    /* height: 20vh; */
+    /* width: 100vw; */
+    height: 0px;
+    width: 0px;
     padding: 2.5vh;
     padding-left: 0%;
     position: fixed;
-    top: 0;
-    left: -90vw;
-    transition: left 0.3s;
+    top: -10vh;
+    border-radius: 20px;
+    background-color: brown;
+    /* left: -90vw; */
+    right: 0;
+    transition: top 0.5s, height 0.5s, width 0.5s;
+    /* transition: left 0.3s; */
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
     font-family: Roboto;
+    display: none;
 }
 
 .show{
-    left: 0;
+    /* left: 0; */
+    top: 0;
+    height: fit-content;
+    width: fit-content;
+    display: block;
+
 }
 
 .fade-layer{
@@ -333,6 +366,46 @@ main{
     width: 250px;
     height: 250px;
     padding: 20px;
+}
+
+#flexwrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product{
+    background-color: var(--md-sys-color-primary-container-dark);
+    width: 100vw;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    font-family: "Roboto", sans-serif;
+    color: ;
+}
+
+.image{
+    /* background-image: url('../img/keyboard1.jpg'); */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    min-width: 500px;
+    min-height: 500px;
+    margin-right: 10px;
+}
+
+#image1{
+    background-image: url('../img/keyboard1.jpg');
+}
+
+#image2{
+    background-image: url('../img/SenseProject.png');
+}
+
+.product>img{
+    width: 80vw;
 }
 
 footer {

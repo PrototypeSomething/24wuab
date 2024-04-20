@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/menu.css">
   <link rel="stylesheet" href="./css/material/colors.module.css">
   <link rel="stylesheet" href="./css/material/theme.css">
   <link rel="stylesheet" href="./css/material/theme.dark.css">
@@ -30,9 +31,24 @@
         <a class="hover" href="about.html">About</a>
       </div>
       <div class="menu-button hover">
-        <i class="material-icons">menu</i>
+        <i class="material-icons" id="menu-icon">menu</i>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
       </div>
     </div>
+    <!-- <div class="menu-expanding">
+      <div class="menu-background"></div>
+      <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+      </nav>
+    </div> -->
     <div class="menu">
       <ul>
         <li><a href="#">Item 1</a></li>
@@ -49,7 +65,7 @@
   <main id="wrapper">
     <div id="landing">
       <!-- <img src="./img/keyboard1.jpg" alt="pucture of the SenseBoard mark one"> -->
-      <h1>SenseBoard MK1</h1>
+      <h1 id="headerText">SenseBoard MK1</h1>
     </div>
 
     <div id="box1">
@@ -109,6 +125,7 @@
   </footer>
   <!-- <script src="./js/blur.js"></script> -->
   <script src="./js/script.js"></script>
+  <!-- <script src="./js/text.js"></script> -->
 </body>
 
 </html>
