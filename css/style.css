@@ -17,52 +17,6 @@ nav {
     top: 0px;
 }
 
-/* @keyframes menu-button {
-    from {
-        scale: 1.0;
-    }
-
-    to {
-        scale: 1.5;
-    }
-} */
-
-/* @keyframes rotate {
-    from {
-        rotate: 0deg;
-    }
-
-    50% {
-        scale: 1 1.5;
-    }
-
-    to {
-        rotate: 360deg;
-    }
-} */
-
-/* #blob {
-    background-color: white;
-    height: 34vmax;
-    aspect-ratio: 1;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    border-radius: 50%;
-    background: linear-gradient(to right, rgb(131, 92, 66), rgb(245, 0, 0));
-    animation: rotate 20s infinite;
-    opacity: 0.8;
-}
-
-#blur {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    z-index: 4;
-    backdrop-filter: blur(12vmax);
-} */
-
 @media screen and (max-width: 768px) {
     * {
         transition: 0.25s;
@@ -121,7 +75,6 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     font-family: "Roboto", sans-serif;
-    /* font-weight: 900; */
 }
 
 .nav-wrapper>a {
@@ -156,7 +109,6 @@ nav {
     width: 50px;
     height: 50px;
     margin: 2%;
-    /* margin-right: 2%; */
     padding: 1%;
     border-radius: 50%;
     cursor: pointer;
@@ -164,7 +116,6 @@ nav {
     align-items: center;
     justify-content: space-around;
     font-family: "Roboto", sans-serif;
-    /* transition: width 0.5s, height 0.5s, border-radius 0.5s; */
 }
 
 #menu-icon {
@@ -173,7 +124,6 @@ nav {
 
 .menu-button>ul {
     display: none;
-    /* font-size: 0rem; */
     list-style-type: none;
     padding: 0px;
 }
@@ -188,8 +138,6 @@ nav {
     display: block;
     margin: 10px;
     line-height: 25px;
-
-    /* padding: 50px; */
 }
 
 .show-menu {
@@ -197,16 +145,6 @@ nav {
     height: 100px;
     border-radius: 10px;
 }
-
-/* .menu-button{
-    background-color: var(--md-sys-color-surface-variant-dark);
-    position: fixed;
-    top: 17.5px;
-    right: 17.5px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-} */
 
 .menu-button:hover {
     background-color: var(--md-sys-color-primary-container-dark);
@@ -216,49 +154,12 @@ nav {
     font-size: 2.5rem;
 }
 
-.menu {
-    /* height: 20vh; */
-    /* width: 100vw; */
-    height: 0px;
-    width: 0px;
-    padding: 2.5vh;
-    padding-left: 0%;
-    position: fixed;
-    top: -10vh;
-    border-radius: 20px;
-    background-color: brown;
-    /* left: -90vw; */
-    right: 0;
-    /* transition: top 0.5s, height 0.5s, width 0.5s; */
-    /* transition: left 0.3s; */
-    box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
-    z-index: 10;
-    font-family: Roboto;
-    display: none;
-}
-
 .show {
-    /* left: 0; */
     top: 0;
     height: fit-content;
     width: fit-content;
     display: block;
 
-}
-
-.fade-layer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: -10;
-}
-
-.fade-layer.visible {
-    display: block;
 }
 
 main {
@@ -280,14 +181,8 @@ main {
     grid-area: mn;
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
     justify-content: center;
-    /* color: var(--md-sys-color-on-primary-container-dark); */
-    /* color: var(--md-sys-color-surface-variant-dark); */
-    /* color: var(--md-sys-color-primary-container-dark); */
-    /* color: invert; */
     height: 100vh;
-    /* background-image: url('../img/keyboard1.jpg'); */
     background-image: url('../img/keyboard.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -305,10 +200,9 @@ main {
     z-index: -1;
 }
 
-#box1 {
+.box1 {
     grid-area: b1;
     display: flex;
-    /* align-items: center; */
     background-color: var(--md-sys-color-primary-container-dark);
     color: var(--md-sys-color-on-primary-container-dark);
     padding: 20px;
@@ -316,21 +210,11 @@ main {
     border-radius: 10px;
 }
 
-#box1>p {
+.box1>p {
     align-self: center;
 }
 
-#box1>div {
-    /* background-image: url('../img/keyboard1.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    min-width: 150px;
-    min-height: 150px; */
-    /* max-height: 900px; */
-    /* margin-left: 10px; */
+.box1>div {
     background-image: url('../img/keyboard1.jpg');
     background-size: cover;
     background-position: center;
@@ -343,20 +227,14 @@ main {
 }
 
 #keyboard1 {
-    /* grid-area: p1; */
     border-radius: 10px;
-    /* width: 100px; */
-    /* max-width: 200px; */
-    /* max-height: 200%; */
-    /* height: auto; */
     object-fit: cover;
-    /* object-position: top; */
     padding-right: 0px;
     margin-right: 0;
     margin-left: 10px;
 }
 
-#box2 {
+.box2 {
     grid-area: b2;
     display: flex;
     background-color: var(--md-sys-color-primary-container-dark);
@@ -367,7 +245,7 @@ main {
     border-radius: 10px;
 }
 
-#box2>div {
+.box2>div {
     background-image: url('../img/keyboard1.jpg');
     background-size: cover;
     background-position: center;
@@ -379,7 +257,7 @@ main {
     margin-right: 10px;
 }
 
-#box3 {
+.box3 {
     grid-area: b3;
     display: flex;
     flex-wrap: wrap;
@@ -390,16 +268,20 @@ main {
     margin: 20px;
     padding: 15px;
     font-family: "Roboto", sans-serif;
+    color: var(--md-sys-color-surface-variant-dark);
 }
 
 .flex-item {
-    /* text-wrap: wrap; */
     background-color: var(--md-sys-color-on-primary-container-dark);
     border-radius: 10px;
     margin: 10px;
     width: 250px;
     height: 250px;
     padding: 20px;
+}
+
+.flex-item>p {
+    margin: auto;
 }
 
 #flexwrapper {
@@ -428,11 +310,14 @@ main {
 
 #products {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .product {
     background-color: var(--md-sys-color-primary-container-dark);
     width: 80vw;
+    max-width: 700px;
     height: fit-content;
     border-radius: 10px;
     margin: 20px;
@@ -452,11 +337,9 @@ main {
 }
 
 .image {
-    /* background-image: url('../img/keyboard1.jpg'); */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    /* min-width: 100px; */
     width: 100%;
     height: auto;
     min-width: 200px;
@@ -467,12 +350,56 @@ main {
     background-image: url('../img/keyboard1.jpg');
 }
 
-#image2 {
+.image2 {
     background-image: url('../img/SenseProject.png');
+    width: 80vw;
 }
 
-.product>img {
+#lucas {
+    background-image: url("../img/Person.png");
+}
+
+/* .product>img {
     width: 80vw;
+} */
+
+#keebflex {
+    width: 80vw;
+    max-width: 700px;
+}
+
+#features {
+    width: 100%;
+    text-align: center;
+    background-color: var(--md-sys-color-on-primary-container-dark);
+    border-radius: 10px;
+    margin: 0px 5%;
+}
+
+#productimage-keeb {
+    background-image: url("../img/keyboard.jpg");
+}
+
+#products>div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#products>div:nth-child(3)>div {
+    background-image: url("../img/windows.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 10px;
+    margin: auto;
+    margin-right: 5px;
+}
+
+#keebflex>div:nth-child(6) {
+    background-image: url("../img/keyboard1.jpg");
+    background-size: cover;
 }
 
 footer {
@@ -484,11 +411,7 @@ footer {
     gap: 1vh;
     padding: 20px;
     padding-left: 20px;
-    /* border-width: 5px; */
-    /* border-style: solid; */
     border-top: solid 5px var(--md-sys-color-outline-dark);
-    /* border: var(--md-sys-color-primary-dark); */
-
     font-family: "Roboto", sans-serif;
 }
 
@@ -498,8 +421,6 @@ footer>.links {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 5vw;
-    /* margin-top: 20px; */
-
 }
 
 footer>.links>a {
