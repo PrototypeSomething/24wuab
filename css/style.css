@@ -352,7 +352,7 @@ main {
 
 .image2 {
     background-image: url('../img/SenseProject.png');
-    width: 80vw;
+    width: 100%;
 }
 
 #lucas {
