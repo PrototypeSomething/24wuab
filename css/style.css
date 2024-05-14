@@ -1,6 +1,4 @@
-style {
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
-}
+style {@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')}
 
 body {
     margin: 0;
@@ -166,7 +164,7 @@ main {
     width: auto;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 100vh 60vhfr 1fr 1fr 60vh;
+    grid-template-rows: 100vh auto auto auto auto;
     grid-template-areas:
         'mn'
         'b1'
@@ -246,7 +244,7 @@ main {
 }
 
 .box2>div {
-    background-image: url('../img/keyboard1.jpg');
+    background-image: url('../img/homeassistant.png');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -399,6 +397,11 @@ main {
 
 #keebflex>div:nth-child(6) {
     background-image: url("../img/keyboard1.jpg");
+    background-size: cover;
+}
+
+#keebflex>div:nth-child(8) {
+    background-image: url("../img/18650.jpg");
     background-size: cover;
 }
 
